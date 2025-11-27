@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <AboutMeSection />
       <SkillsSection />
       <ExperienceSection />
       <WorkSection />
