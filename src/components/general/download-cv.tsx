@@ -4,9 +4,9 @@ import Button from "@/components/general/button";
 
 const DownloadCV = () => {
   return (
-    <Button onClick={() => window?.open("/files/AkshatSaxena.pdf", "_blank")}>
-      Download CV
-    </Button>
+    <a href="/files/Akshat_Saxena_Resume.pdf" download="Akshat_Saxena_Resume.pdf">
+      <Button>Download CV</Button>
+    </a>
   );
 };
 

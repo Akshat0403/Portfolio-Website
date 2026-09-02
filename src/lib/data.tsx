@@ -14,19 +14,10 @@ import LogoMongoDB from "/public/images/logos/icon-mongodb.svg";
 import LogoTailwindcss from "/public/images/logos/icon-tailwindcss.svg";
 import LogoFigma from "/public/images/logos/icon-figma.svg";
 import LogoGit from "/public/images/logos/icon-git.svg";
-import LogoPython from "/public/images/logos/PythonLogo.svg";
-import LogoDjango from "/public/images/logos/Django.svg";
-import LogoFlask from "/public/images/logos/Flask.svg";
 import LogoJava from "/public/images/logos/Java.svg";
 import LogoFirebase from "/public/images/logos/Firebase.svg";
 import LogoSQL from "/public/images/logos/SQL.svg";
-import LogoDSA from "/public/images/logos/DSA.svg";
 
-import LogoUpwork from "/public/images/logos/logo-upwork.svg";
-
-import ProjectFiskil from "/public/images/project-fiskil.png";
-import ProjectWingie from "/public/images/project-wingie.png";
-import ProjectPepehousing from "/public/images/project-pepehousing.png";
 import SpaceCraft from "/public/images/SpaceCraft.png";
 import CodeCraft from "/public/images/CodeCraft.png";
 import ExerciseApp from "/public/images/ExerciseApp.jpg";
@@ -62,10 +53,6 @@ export const NAV_LINKS = [
     href: "#work",
   },
   {
-    label: "Testimonials",
-    href: "#testimonials",
-  },
-  {
     label: "Contact",
     href: "#contact",
   },
@@ -82,7 +69,7 @@ export const SOCIAL_LINKS = [
   },
   {
     icon: Mail,
-    url: "https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlKFhJwlxmDFnzpczhLQkHlmpCLRkVhMpMgTnxPqmXRDBqvxrMKnXKCGrCsBnRXdcvWJdV",
+    url: "mailto:saxena.akshat0405@gmail.com",
   },
 ];
 
@@ -116,7 +103,7 @@ export const TECHNOLOGIES: TechDetails[] = [
   {
     label: "Chart.js",
     logo: LogoNest,
-    url: "https://nestjs.com/",
+    url: "https://www.chartjs.org/",
   },
   {
     label: "Socket.io",
@@ -150,24 +137,19 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: "https://git-scm.com/",
   },
   {
-    label: "Python",
-    logo: LogoPython,
-    url: "https://git-scm.com/",
-  },
-  {
     label: "Java",
     logo: LogoJava,
-    url: "https://git-scm.com/",
+    url: "https://www.java.com/",
   },
   {
     label: "Firebase",
     logo: LogoFirebase,
-    url: "https://git-scm.com/",
+    url: "https://firebase.google.com/",
   },
   {
     label: "SQL",
     logo: LogoSQL,
-    url: "https://git-scm.com/",
+    url: "https://www.mysql.com/",
   },
 ];
 
@@ -177,110 +159,42 @@ export const PROJECTS: ProjectDetails[] = [
   {
     name: "Space Craft",
     description:
-      "Developed an AI-powered interior visualization platform that transforms empty room images into fully furnished, realistic interiors based on user prompts. Implemented advanced image-to-image generation workflows, prompt processing, and a modern, responsive UI for seamless room customization. Designed the system to deliver high-quality, photorealistic renders with efficient API integration and smooth user experience across devices. \n Under Development Phase",
+      "An AI-powered interior visualization platform that transforms empty room images into fully furnished, photorealistic interiors based on user prompts. Built with advanced image-to-image generation workflows, Replicate AI integration, and a modern responsive UI for seamless room customization across all devices.\n\n🚧 Under Active Development",
     url: "https://github.com/Akshat0403/AI-Staging-App-Frontend",
     previewImage: SpaceCraft,
     technologies: [
       "React",
       "Vite",
-      "Node JS",
-      "Express JS",
+      "Node.js",
+      "Express.js",
       "Supabase",
-      "Clerk Authentication",
+      "Clerk Auth",
       "Replicate AI",
-      "Vercel for Frontend Hosting",
-      "Render for Backend Hosting",
+      "Vercel",
+      "Render",
     ],
   },
   {
     name: "Code Craft",
     description:
-      "A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.",
+      "A real-time collaborative code editor that lets developers write, share, and execute code together in the browser. Features syntax highlighting, multi-user cursors, authentication, and a freemium model powered by a payment gateway for pro subscriptions.",
     url: "https://github.com/Akshat0403/Collaborative-Code-Editor",
     previewImage: CodeCraft,
     technologies: [
       "React",
       "Next.js",
-      "Typescript",
+      "TypeScript",
       "Tailwindcss",
       "Convex",
-      "Clerk Authentication",
-      "Lemon Squeezy Payment Gateway",
+      "Clerk Auth",
+      "Lemon Squeezy",
       "Vercel",
     ],
   },
-  // {
-  //   name: "Brain Bot",
-  //   description:
-  //     "A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.",
-  //   url: "https://github.com/Akshat0403/BrainBot",
-  //   previewImage: ProjectWingie,
-  //   technologies: [
-  //     "React",
-  //     "Java Script",
-  //     "Node.js",
-  //     "Express.js",
-  //     "PostgreSQL",
-  //     "Styled Components",
-  //     "Redux",
-  //     "Firebase",
-  //   ],
-  // },
-  // {
-  //   name: "Quick Cart",
-  //   description:
-  //     "A platform for accessing real-time open banking and energy data to help you grow your business, backed with scalable back-end infrastructure.",
-  //   url: "https://github.com/Akshat0403/QuickCart",
-  //   previewImage: ProjectFiskil,
-  //   technologies: [
-  //     "React",
-  //     "Next.js",
-  //     "Typescript",
-  //     "Tailwindcss",
-  //     "Material UI",
-  //     "Redux Toolkit",
-  //     "React Query",
-  //     "Express.js",
-  //     "PostgreSQL",
-  //     "Firebase",
-  //   ],
-  // },
-  // {
-  //   name: "AI Powered Resume Analyzer",
-  //   description:
-  //     "A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.",
-  //   url: "https://github.com/Akshat0403/AI-Powered-Resume-Analyzer",
-  //   previewImage: ProjectPepehousing,
-  //   technologies: [
-  //     "React",
-  //     "Next.js",
-  //     "Typescript",
-  //     "Tailwindcss",
-  //     "Redux Toolkit",
-  //     "React Query",
-  //     "Storybook",
-  //   ],
-  // },
-  // {
-  //   name: "Realtime Chat Application",
-  //   description:
-  //     "A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.",
-  //   url: "https://github.com/Akshat0403/Realtime-Chat-Application",
-  //   previewImage: ProjectPepehousing,
-  //   technologies: [
-  //     "React",
-  //     "Next.js",
-  //     "Typescript",
-  //     "Tailwindcss",
-  //     "Redux Toolkit",
-  //     "React Query",
-  //     "Storybook",
-  //   ],
-  // },
   {
     name: "Fitness Application",
     description:
-      "A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.",
+      "A full-stack fitness tracker that helps users discover exercises by muscle group, track their workout history, and monitor progress over time. Integrates with the ExerciseDB API for a comprehensive library of 1300+ exercises with animations and detailed instructions.",
     url: "https://github.com/Akshat0403/Full-Stack-Exercise-App",
     previewImage: ExerciseApp,
     technologies: ["React", "JavaScript", "Tailwindcss"],
@@ -288,33 +202,31 @@ export const PROJECTS: ProjectDetails[] = [
   {
     name: "Movie Details Application",
     description:
-      "A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.",
+      "A full-stack movie discovery platform where users can browse trending films, search by genre or title, view detailed info (cast, ratings, trailers), and maintain a personal watchlist — all powered by the TMDB API with a clean, cinematic UI.",
     url: "https://github.com/Akshat0403/Full-Stack-Movie-App",
     previewImage: MovieApp,
     technologies: [
       "React",
       "Next.js",
-      "Typescript",
+      "TypeScript",
       "Tailwindcss",
       "Redux Toolkit",
       "React Query",
-      "Storybook",
     ],
   },
   {
     name: "Food Recipe Application",
     description:
-      "A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.",
+      "A delightful recipe discovery app that lets food lovers search, filter, and save recipes from a rich API library. Features step-by-step cooking instructions, ingredient lists, nutritional info, and a favorites system for meal planning.",
     url: "https://github.com/Akshat0403/Full-Stack-Food-Recipe-App",
     previewImage: RecipeApp,
     technologies: [
       "React",
       "Next.js",
-      "Typescript",
+      "TypeScript",
       "Tailwindcss",
       "Redux Toolkit",
       "React Query",
-      "Storybook",
     ],
   },
 ];

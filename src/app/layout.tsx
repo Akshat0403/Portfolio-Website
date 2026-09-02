@@ -1,5 +1,5 @@
 import Script from 'next/script';
-import { Inter } from 'next/font/google';
+import { Inter, Outfit } from 'next/font/google';
 import { Metadata } from 'next';
 
 import './globals.css';
@@ -7,11 +7,12 @@ import Header from '@/components/layout/header';
 import { Providers } from '@/lib/providers';
 import Footer from '@/components/layout/footer';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' });
 
 const title = 'Akshat Saxena | Full Stack Developer From Rajasthan, India.';
 const description =
-  'A self-proclaimed designer who specializes in full stack development (React.js & Node.js), from Ahmedabad, India.';
+  'Full Stack Developer specializing in React.js & Node.js, building fast, accessible, and visually stunning web applications from Jaipur, India.';
 const url = 'https://akshatsaxena.dev';
 
 export const metadata: Metadata = {
@@ -23,19 +24,18 @@ export const metadata: Metadata = {
     'Full Stack Developer',
     'React Developer',
     'Next.js Developer',
-    'Backend Develor',
+    'Backend Developer',
     'Node.js Developer',
     'Express.js Developer',
-    'Nest.js Developer',
-    'Python Developer',
-    'Django Developer',
-    'Flask Developer',
-    'Java Developer'
+    'JavaScript Developer',
+    'TypeScript Developer',
+    'Web Developer India',
+    'Akshat Saxena',
   ],
   creator: 'Akshat Saxena',
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
+    { media: '(prefers-color-scheme: dark)', color: '#030712' },
   ],
   openGraph: {
     type: 'website',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title,
     description,
-    creator: '@shahsagarm',
+    creator: '@akshat0403',
     images: '/images/open-graph-sagar.png',
   },
   icons: {
@@ -89,7 +89,9 @@ export default function RootLayout({
           </Script>
         </head>
       ) : null}
-      <body className={`${inter.className} bg-gray text-gray-600 antialiased`}>
+      <body
+        className={`${inter.variable} ${outfit.variable} font-sans bg-gray text-gray-600 antialiased`}
+      >
         <Providers>
           <Header />
           <main className="flex min-h-screen w-full flex-col">{children}</main>

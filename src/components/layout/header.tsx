@@ -21,7 +21,7 @@ import Typography from '@/components/general/typography';
 
 const Logo = () => (
   <Typography variant="h3" className="font-bold">
-    {'<AS />'}
+    <span className="text-gradient">{'<AS />'}</span>
   </Typography>
 );
 
@@ -40,8 +40,10 @@ const Header = () => {
   return (
     <header
       className={mergeClasses(
-        'sticky top-0 z-30 w-full border-b border-transparent bg-gray max-md:border-gray-100',
-        scrolled ? 'bg-gray/50 backdrop-blur-xl md:border-gray-100' : ''
+        'sticky top-0 z-30 w-full border-b border-transparent bg-gray/80 max-md:border-gray-100 transition-all duration-300',
+        scrolled
+          ? 'bg-gray/70 backdrop-blur-xl md:border-gray-100 dark:border-gray-800 shadow-sm shadow-gray-900/5'
+          : ''
       )}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between p-4 md:px-8">
@@ -49,15 +51,20 @@ const Header = () => {
           <Logo />
         </Link>
         <div className="hidden items-center gap-6 md:flex">
-          <ul className="flex list-none items-center gap-6">
+          <ul className="flex list-none items-center gap-1">
             {NAV_LINKS.map((link, index) => (
               <li key={index}>
-                <Link href={link.href}>{link.label}</Link>
+                <Link
+                  href={link.href}
+                  className="relative px-3 py-2 rounded-lg text-gray-600 dark:text-gray-400 font-medium transition-all duration-200 hover:text-accent-600 dark:hover:text-accent-400 hover:bg-accent-50 dark:hover:bg-accent-900/20"
+                >
+                  {link.label}
+                </Link>
               </li>
             ))}
           </ul>
-          <div className="h-6 w-0.5 bg-gray-100"></div>
-          <div className="flex items-center gap-4">
+          <div className="h-6 w-px bg-gray-200 dark:bg-gray-700" />
+          <div className="flex items-center gap-3">
             <ThemeSwitcher />
             <DownloadCV />
           </div>
@@ -70,7 +77,7 @@ const Header = () => {
             </IconButton>
           </DrawerTrigger>
           <DrawerContent>
-            <div className="flex items-center justify-between border-b border-gray-100 p-4">
+            <div className="flex items-center justify-between border-b border-gray-100 dark:border-gray-800 p-4">
               <Logo />
               <DrawerClose asChild>
                 <IconButton>
@@ -78,12 +85,13 @@ const Header = () => {
                 </IconButton>
               </DrawerClose>
             </div>
-            <div className="border-b border-gray-100 p-4">
-              <ul className="flex list-none flex-col gap-4">
+            <div className="border-b border-gray-100 dark:border-gray-800 p-4">
+              <ul className="flex list-none flex-col gap-2">
                 {NAV_LINKS.map((link, index) => (
                   <li key={index}>
                     <Link
                       href={link.href}
+                      className="flex items-center rounded-xl px-3 py-2.5 font-medium text-gray-700 dark:text-gray-300 hover:bg-accent-50 dark:hover:bg-accent-900/20 hover:text-accent-600 dark:hover:text-accent-400 transition-colors duration-200"
                       onClick={() => {
                         const timeoutId = setTimeout(() => {
                           setIsOpen(false);
@@ -99,7 +107,7 @@ const Header = () => {
             </div>
             <div className="flex flex-col gap-4 p-4">
               <div className="flex items-center justify-between">
-                <Typography>Switch Theme</Typography>
+                <Typography className="font-medium">Switch Theme</Typography>
                 <ThemeSwitcher />
               </div>
               <DownloadCV />

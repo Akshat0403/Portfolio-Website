@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import SagarFullPose from '/public/images/sagar-full-pose.jpg';
+import AkshatPhoto from '/public/images/Akshat.png';
 import Tag from '@/components/data-display/tag';
 import Container from '@/components/layout/container';
 import Typography from '@/components/general/typography';
@@ -9,99 +9,108 @@ import { EXTERNAL_LINKS } from '@/lib/data';
 
 const AboutMeSection = () => {
   return (
-    <Container className="bg-gray-50" id="about">
+    <Container className="bg-gradient-to-b from-gray-50 to-gray dark:from-gray-900 dark:to-gray" id="about">
       <div className="self-center">
         <Tag label="About me" />
       </div>
 
-      <div className="flex w-full flex-col justify-between gap-12 md:flex-row">
+      <div className="flex w-full flex-col justify-between gap-12 md:flex-row md:items-center">
         {/* Image */}
         <div className="flex justify-center md:order-first md:justify-end">
-          <div className="relative h-[380px] w-[320px] md:h-[460px] md:w-[380px] lg:h-[520px] lg:w-[440px]">
+          <div className="relative h-[400px] w-[340px] md:h-[480px] md:w-[400px] lg:h-[520px] lg:w-[440px]">
+            {/* Gradient glow behind image */}
+            <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-accent-400/30 via-violet-400/20 to-accent-300/10 blur-2xl" />
             <Image
-              src={SagarFullPose}
-              alt="Fullpose of Sagar"
-              className="absolute z-10 h-[360px] w-[280px] border-8 border-gray-50 max-md:left-5 md:right-0 md:top-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]"
-              style={{ objectFit: 'cover' }}
-            ></Image>
-            <div className="absolute h-[360px] w-[320px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:left-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]"></div>
+              src={AkshatPhoto}
+              alt="Photo of Akshat Saxena"
+              className="relative z-10 h-full w-full rounded-2xl object-cover object-top shadow-2xl border border-gray-200 dark:border-gray-700"
+              style={{ objectFit: 'cover', objectPosition: 'top' }}
+            />
+            {/* Decorative elements */}
+            <div className="absolute -bottom-5 -right-5 h-24 w-24 rounded-2xl bg-gradient-to-br from-accent-400 to-violet-500 opacity-25 blur-xl -z-10" />
+            <div className="absolute -top-3 -left-3 h-16 w-16 rounded-xl border-2 border-accent-300 dark:border-accent-700 opacity-60" />
+            {/* Experience badge */}
+            <div className="absolute bottom-6 -right-6 flex items-center gap-2 rounded-2xl border border-accent-200 dark:border-accent-800 bg-gray dark:bg-gray-900 px-4 py-3 shadow-lg shadow-accent-500/10 z-20">
+              <div className="text-2xl">💻</div>
+              <div>
+                <Typography variant="body3" className="font-bold text-gray-900 dark:text-gray-100">Full Stack Dev</Typography>
+                <Typography variant="body3" className="text-gray-500 text-xs">React • Node • Next.js</Typography>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Content */}
-        <div className="flex max-w-xl flex-col gap-6">
-          <Typography variant="h3">
+        <div className="flex max-w-xl flex-col gap-5">
+          <div className="h-1 w-12 rounded-full bg-gradient-to-r from-accent-500 to-violet-500" />
+          <Typography variant="h3" className="text-gray-900 dark:text-gray-100">
             Curious about me? Here you have it:
           </Typography>
-          <Typography>
-            I&apos;m a passionate,{' '}
-            <Link
-              noCustomization
-              externalLink
-              withUnderline
-              href={EXTERNAL_LINKS.FIGMA}
-            >
-              self-proclaimed designer
-            </Link>{' '}
-            who specializes in full stack development (React.js & Node.js). I am
-            enthusiastic about bringing the technical and visual aspects of
-            digital products to life. User experience, pixel perfect design, and
-            writing clear, readable, highly performant code matters to me.
+          <Typography className="leading-relaxed">
+            I&apos;m a passionate full stack developer specializing in{' '}
+            <span className="font-semibold text-accent-600 dark:text-accent-400">React.js &amp; Node.js</span>,
+            based in Jaipur, Rajasthan. I love bringing technical and visual
+            aspects of digital products to life — user experience, pixel-perfect
+            design, and clean, performant code are things I genuinely care about.
           </Typography>
-          <Typography>
-            I began my journey as a web developer in 2015, and since then,
-            I&apos;ve continued to grow and evolve as a developer, taking on new
-            challenges and learning the latest technologies along the way. Now,
-            in my early thirties, 7 years after starting my web development
-            journey, I&apos;m building cutting-edge web applications using
-            modern technologies such as Next.js, TypeScript, Nestjs,
-            Tailwindcss, Supabase and much more.
+          <Typography className="leading-relaxed">
+            My journey in web development has taken me through building AI-powered
+            platforms, collaborative real-time tools, and full-featured applications
+            using modern technologies like{' '}
+            <span className="font-semibold text-gray-800 dark:text-gray-200">Next.js, TypeScript, Supabase, Firebase</span>,
+            and more.
           </Typography>
-          <Typography>
-            I am very much a progressive thinker and enjoy working on products
-            end to end, from ideation all the way to development.
-          </Typography>
-          <Typography>
-            When I&apos;m not in full-on developer mode, you can find me
-            hovering around on twitter or on indie hacker, witnessing the
-            journey of early startups or enjoying some free time. You can follow
-            me on{' '}
-            <Link
-              noCustomization
-              externalLink
-              withUnderline
-              href={EXTERNAL_LINKS.TWITTER}
-            >
-              Twitter
-            </Link>{' '}
-            where I share tech-related bites and build in public, or you can
-            follow me on{' '}
+          <Typography className="leading-relaxed">
+            I&apos;m a progressive thinker who enjoys working on products end-to-end —
+            from ideation all the way to deployment. When I&apos;m not coding, you can
+            find me exploring new tech, contributing to open source, or building
+            side projects.{' '}
+            You can check out my work on{' '}
             <Link
               noCustomization
               externalLink
               withUnderline
               href={EXTERNAL_LINKS.GITHUB}
+              className="font-semibold text-accent-600 dark:text-accent-400 hover:text-accent-700"
             >
               GitHub
             </Link>
             .
           </Typography>
-          <Typography>Finally, some quick bits about me.</Typography>
-          <div className="flex flex-col gap-2 md:flex-row md:gap-6">
-            <ul className="flex list-inside list-disc flex-col gap-2">
-              <Typography component="li">
-                B.E. in Computer Engineering
-              </Typography>
-              <Typography component="li">Full time freelancer</Typography>
+          <Typography className="font-medium text-gray-800 dark:text-gray-200">
+            Some quick bits about me:
+          </Typography>
+          <div className="flex flex-col gap-2 md:flex-row md:gap-10">
+            <ul className="flex list-none flex-col gap-2">
+              {[
+                '🎓 B.Tech in Computer Science',
+                '⚡ Full Stack Developer',
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2">
+                  <span className="text-base">{item.split(' ')[0]}</span>
+                  <Typography variant="body2" className="text-gray-700 dark:text-gray-300">
+                    {item.split(' ').slice(1).join(' ')}
+                  </Typography>
+                </li>
+              ))}
             </ul>
-            <ul className="flex list-inside list-disc flex-col gap-2">
-              <Typography component="li">Avid learner</Typography>
-              <Typography component="li">Aspiring indie hacker</Typography>
+            <ul className="flex list-none flex-col gap-2">
+              {[
+                '🚀 Avid Learner',
+                '🌟 Open Source Enthusiast',
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2">
+                  <span className="text-base">{item.split(' ')[0]}</span>
+                  <Typography variant="body2" className="text-gray-700 dark:text-gray-300">
+                    {item.split(' ').slice(1).join(' ')}
+                  </Typography>
+                </li>
+              ))}
             </ul>
           </div>
-          <Typography>
-            One last thing, I&apos;m available for freelance work, so feel free
-            to reach out and say hello! I promise I don&apos;t bite 😉
+          <Typography className="leading-relaxed">
+            I&apos;m always open to new opportunities and collaborations. Feel free to
+            reach out — I promise I don&apos;t bite! 😄
           </Typography>
         </div>
       </div>
