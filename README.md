@@ -21,12 +21,18 @@ A passionate **Full Stack Developer** (React.js & Node.js) based in **Jaipur, Ra
 - ⚡ Full Stack Developer — React • Node.js • Next.js
 - 🚀 Avid Learner & Open Source Enthusiast
 
+## 💼 Experience
+
+- **Backend Development Intern** — **Xebia IT Architects** *(June 2026 – August 2026)*
+  - Completed an 8-week internship focused on backend development, contributing to backend systems and API workflows.
+  - Received Certificate of Appreciation for continuous learning, engineering discipline, and active team contributions.
+
 ## 🚀 Featured Projects
 
 | Project | Description | Tech |
 |---|---|---|
-| [Space Craft](https://github.com/Akshat0403/AI-Staging-App-Frontend) | AI-powered interior visualization platform using image-to-image generation | React, Vite, Node.js, Express.js, Supabase, Replicate AI |
-| [Code Craft](https://github.com/Akshat0403/Collaborative-Code-Editor) | Real-time collaborative code editor with freemium payment model | React, Next.js, TypeScript, Convex, Clerk Auth |
+| [Auto Drive](https://github.com/Akshat0403/AutoDriveFrontend) | Full-stack platform simplifying used car buying experience with ML price prediction | Next.js, Python, Flask, React, Tailwind CSS |
+| [Code Craft](https://github.com/Akshat0403/CodeCraft) | Real-time collaborative code editor with freemium payment model | React, Next.js, TypeScript, Convex, Clerk Auth |
 | [Fitness Application](https://github.com/Akshat0403/Full-Stack-Exercise-App) | Full-stack fitness tracker with 1300+ exercises via ExerciseDB API | React, JavaScript, Tailwind CSS |
 | [Movie Details Application](https://github.com/Akshat0403/Full-Stack-Movie-App) | Movie discovery platform with watchlist powered by TMDB API | React, Next.js, TypeScript, Redux Toolkit |
 | [Food Recipe Application](https://github.com/Akshat0403/Full-Stack-Food-Recipe-App) | Recipe discovery app with favorites & step-by-step cooking instructions | React, Next.js, TypeScript, Redux Toolkit |

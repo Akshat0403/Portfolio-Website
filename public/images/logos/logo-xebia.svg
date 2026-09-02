@@ -1,0 +1,5 @@
+<svg width="130" height="36" viewBox="0 0 130 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6 6L20 20L6 30" stroke="#000000" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20 6L6 20L20 30" stroke="#000000" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="30" y="25" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="800" fill="#000000" letter-spacing="-0.5">Xebia</text>
+</svg>

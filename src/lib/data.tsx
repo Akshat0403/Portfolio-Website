@@ -17,6 +17,8 @@ import LogoGit from "/public/images/logos/icon-git.svg";
 import LogoJava from "/public/images/logos/Java.svg";
 import LogoFirebase from "/public/images/logos/Firebase.svg";
 import LogoSQL from "/public/images/logos/SQL.svg";
+import LogoXebia from "/public/images/logos/logo-xebia.svg";
+import LogoXebiaDark from "/public/images/logos/logo-xebia-dark.svg";
 
 import SpaceCraft from "/public/images/SpaceCraft.png";
 import CodeCraft from "/public/images/CodeCraft.png";
@@ -153,32 +155,46 @@ export const TECHNOLOGIES: TechDetails[] = [
   },
 ];
 
-export const EXPERIENCES: ExperienceDetails[] = [];
+export const EXPERIENCES: ExperienceDetails[] = [
+  {
+    logo: LogoXebia,
+    darkModeLogo: LogoXebiaDark,
+    logoAlt: "Xebia IT Architects logo",
+    position: "Backend Development Intern",
+    startDate: new Date(2026, 5),
+    endDate: new Date(2026, 7),
+    currentlyWorkHere: false,
+    summary: [
+      "Completed an 8-week intensive internship focused on backend development at Xebia IT Architects under professional engineering mentorship.",
+      "Contributed to architecting and developing robust backend systems, APIs, and scalable data workflows.",
+      "Demonstrated sincere effort, active team participation, and commitment to engineering best practices, receiving a Certificate of Appreciation.",
+    ],
+  },
+];
 
 export const PROJECTS: ProjectDetails[] = [
   {
-    name: "Space Craft",
+    name: "Auto Drive Full Stack",
     description:
-      "An AI-powered interior visualization platform that transforms empty room images into fully furnished, photorealistic interiors based on user prompts. Built with advanced image-to-image generation workflows, Replicate AI integration, and a modern responsive UI for seamless room customization across all devices.\n\n🚧 Under Active Development",
-    url: "https://github.com/Akshat0403/AI-Staging-App-Frontend",
-    previewImage: SpaceCraft,
+      "AutoDrive is a full-stack web application designed to simplify the used car buying experience using modern web technologies and machine learning. ",
+    url: "https://github.com/Akshat0403/AutoDriveFrontend",
+    previewImage: CodeCraft,
     technologies: [
       "React",
-      "Vite",
-      "Node.js",
-      "Express.js",
-      "Supabase",
+      "Next.js",
+      "TypeScript",
+      "Tailwindcss",
+      "Convex",
       "Clerk Auth",
-      "Replicate AI",
+      "Lemon Squeezy",
       "Vercel",
-      "Render",
     ],
   },
   {
     name: "Code Craft",
     description:
       "A real-time collaborative code editor that lets developers write, share, and execute code together in the browser. Features syntax highlighting, multi-user cursors, authentication, and a freemium model powered by a payment gateway for pro subscriptions.",
-    url: "https://github.com/Akshat0403/Collaborative-Code-Editor",
+    url: "https://github.com/Akshat0403/CodeCraft",
     previewImage: CodeCraft,
     technologies: [
       "React",
